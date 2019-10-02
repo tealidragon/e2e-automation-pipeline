@@ -5,7 +5,9 @@ import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+
 public class HomePage extends PageObject {
+
     @FindBy(xpath= "//input[contains(@value,'Find Flights')]")
     public WebElement findFlightsButton;
 
