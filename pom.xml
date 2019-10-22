@@ -296,6 +296,19 @@
                         <banDuplicateClasses>
                             <ignoreClasses>
                                 <ignoreClass>javax.servlet.*</ignoreClass>
+                                <ignoreClass>org.apache.tools.ant.*</ignoreClass>
+                                <ignoreClass>org.objectweb.asm.signature.*</ignoreClass>
+                                <ignoreClass>org.joda.time.*</ignoreClass>
+                                <ignoreClass>org.openqa.selenium.*</ignoreClass>
+                                <ignoreClass>org.aopalliance.*</ignoreClass>
+                                <ignoreClass>org.apache.commons.collections.*</ignoreClass>
+                                <ignoreClass>net.jcip.annotations.*</ignoreClass>
+                                <ignoreClass>org.xmlpull.*</ignoreClass>
+                                <ignoreClass>javax.inject.*</ignoreClass>
+                                <ignoreClass>org.apache.log4j.*</ignoreClass>
+                                <ignoreClass>javax.xml.bind.*</ignoreClass>
+                                <ignoreClass>javax.annotation.*</ignoreClass>
+                                <ignoreClass>org.apache.xmlbeans.xml.stream.*</ignoreClass>
                             </ignoreClasses>
                         </banDuplicateClasses>
                     </rules>
