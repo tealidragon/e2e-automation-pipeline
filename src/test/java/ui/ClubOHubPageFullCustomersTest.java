@@ -14,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.ClubOHubPage;
 import pages.LoginPage;
-import steps.ui.ClubOHubPageSteps;
+import steps.ui.ClubOHubUISteps;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -32,7 +32,7 @@ public class ClubOHubPageFullCustomersTest {
     @Managed
     LoginPage loginPage;
 
-    ClubOHubPageSteps steps;
+    ClubOHubUISteps steps;
 
     @TestData
     public static Collection<Object[]> testCustomers(){
@@ -60,7 +60,7 @@ public class ClubOHubPageFullCustomersTest {
 //                .withCloActualEndPlusOrMinusDays(-2)
 //                .withMemberStatus(MemberStatus.EXPIRED)
 //                .buildDto();
-        loginPage.inputLoginInformation("igold@o.co");
+        loginPage.inputLoginInformation("igold@o.co","");
         clubOHubPage.open();
         steps.customerMessage(clubType, message);
 

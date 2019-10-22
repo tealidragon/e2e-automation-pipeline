@@ -26,9 +26,12 @@ public class LoginPage extends PageObject {
         open();
     }
 
-    public void inputLoginInformation(String emailAddress){
+    public void inputLoginInformation(String emailAddress, String password) {
         typeInto(usernameField, emailAddress);
-        typeInto(passwordField, "password");
+        if (password.isEmpty())
+            typeInto(passwordField, "password");
+        typeInto(passwordField, password);
+
 //        usernameField.sendKeys(emailAddress);
 //        passwordField.sendKeys("password");
 

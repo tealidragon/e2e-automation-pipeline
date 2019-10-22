@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.ClubOHubPage;
 import pages.LoginPage;
-import steps.ui.ClubOHubPageSteps;
+import steps.ui.ClubOHubUISteps;
 
 @RunWith(SerenityRunner.class)
 @WithTags({
@@ -27,7 +27,7 @@ public class ClubOHubPageTest {
     ClubOHubPage clubOHubPage;
 
     @Steps
-    ClubOHubPageSteps findFlightsUISteps;
+    ClubOHubUISteps findFlightsUISteps;
 
     @Managed
     LoginPage loginPage;
@@ -35,13 +35,13 @@ public class ClubOHubPageTest {
     @Test
     public void validateHubPageTitle() {
 
-        loginPage.inputLoginInformation("igold@o.co");
+        loginPage.inputLoginInformation("igold@o.co", "");
 //        Assert.assertEquals(clubOHubPage.getTitle(), "Overstock.com: Online Shopping - Bedding, Furniture, Electronics, Jewelry, Clothing & more");
     }
 
     @Test
     public void validateMainHeroButton() {
-        loginPage.inputLoginInformation("igold@o.co");
+        loginPage.inputLoginInformation("igold@o.co", "");
 //        loginSteps.loginUser();
         clubOHubPage.open();
 

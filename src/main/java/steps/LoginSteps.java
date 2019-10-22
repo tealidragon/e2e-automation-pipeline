@@ -9,7 +9,7 @@ public class LoginSteps {
 
     @Step
     public void enterLoginData(String username, String password) {
-        loginPage.inputLoginInformation(username);
+        loginPage.inputLoginInformation(username, "");
     }
 
 }
