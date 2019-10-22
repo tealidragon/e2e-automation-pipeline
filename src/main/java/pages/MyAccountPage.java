@@ -98,4 +98,10 @@ public class MyAccountPage extends PageObject {
     public boolean IscluboRewards_loaded() {
         return txt_myRewards.isVisible();
     }
+
+
+    public MyAccountPage getMyAccountPage() {
+        return new MyAccountPage();
+
+    }
 }
