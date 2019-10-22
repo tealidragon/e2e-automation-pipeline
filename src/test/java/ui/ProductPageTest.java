@@ -71,7 +71,7 @@ public class ProductPageTest {
     @Test
     public void validateProductPageTitle() {
 
-        loginPage.inputLoginInformation("igold@o.co", "password123");
+        loginPage.inputLoginInformation("igold@o.co", "password");
         productPage.getProductPage();
         System.out.println(driver.getCurrentUrl());
     }
@@ -79,7 +79,7 @@ public class ProductPageTest {
 
     @Test
     public void validateClubOPerksMessaging() {
-        loginPage.inputLoginInformation("igold@o.co", "password123");
+        loginPage.inputLoginInformation("igold@o.co", "password");
 
         String clubOCallout = productPageUISteps.getClubOPerksMessage().getText();
 //        String clubOCallout = productPage.getProductPage().cluboproductoffer.getText();
@@ -93,7 +93,7 @@ public class ProductPageTest {
 
     @Test
     public void validateClubOProductOffered() {
-        loginPage.inputLoginInformation("igold@o.co", "password123");
+        loginPage.inputLoginInformation("igold@o.co", "password");
 
         String clubOProductOffer = productPageUISteps.getClubOProductOffer().getText();
         assertThat(clubOProductOffer, containsString("$19.95"));
